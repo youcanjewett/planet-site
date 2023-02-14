@@ -6,13 +6,14 @@ class PlanetMenu extends React.Component {
     render() {
         return (
             <div className = "menu-container">
-                <h3 className = 'menu-planet'>Mercury</h3>
-                <h3 className = 'menu-planet'>Venus</h3>
-                <h3 className = 'menu-planet'>Earth</h3>
-                <h3 className = 'menu-planet'>Mars</h3>
-                <h3 className = 'menu-planet'>Jupiter</h3>
-                <h3 className = 'menu-planet'>Saturn</h3>
-                <h3 className = 'menu-planet'>Neptune</h3>
+                <div className = 'menu-planet'>Mercury</div>
+                <div className = 'menu-planet'>Venus</div>
+                <div className = 'menu-planet'>Earth</div>
+                <div className = 'menu-planet'>Mars</div>
+                <div className = 'menu-planet'>Jupiter</div>
+                <div className = 'menu-planet'>Saturn</div>
+                <div className = 'menu-planet'>Uranus</div>
+                <div className = 'menu-planet'>Neptune</div>
 
                 <div className="header-toggle">
                     <span></span>

@@ -1,0 +1,85 @@
+.planet-facts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.data-node-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 23px;
+    justify-content: left;
+    min-height:128px;
+    min-width: 255px;
+
+    border:  1px #838391 solid;
+    
+}
+
+.data-node-container:not(:last-child):after {
+    margin-right: 30px;
+}
+
+.data-title {
+    color: #838391;
+    font-size: 13px;
+}
+
+.data-value {
+    color: white;
+    font-size: 40px;
+}
+
+/*tablet styles*/
+@media (min-width: 481px) and (max-width: 800px) {
+
+    .data-node-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        justify-content: left;
+        min-height:88px;
+        min-width: 164px;
+        
+    }
+
+    .data-title {
+        font-size: 10px;
+        letter-spacing: .73px;
+    }
+    
+    .data-value {
+        font-size: 24px;
+    }
+}
+
+/* mobile styles*/
+@media (max-width: 480px) {
+    .planet-facts-container {
+        flex-direction: column;
+    }
+
+    .data-node-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height:48px;
+        min-width: 327px;
+        padding: 13px 24px;
+        
+    }
+
+    .data-node-container:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .data-title {
+        font-size: 10px;
+    }
+
+    .data-value {
+        font-size: 20px;
+        letter-spacing: -.75px;
+    }
+
+}

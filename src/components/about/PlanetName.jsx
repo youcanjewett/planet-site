@@ -3,7 +3,7 @@ import '../../styles/about.css';
 
 const PlanetName = () => {
     return (
-        <div className="planet-name">Planet Name</div>
+        <h1 className="planet-name">Mercury</h1>
     )
 }
 

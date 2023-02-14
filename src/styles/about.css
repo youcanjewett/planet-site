@@ -1,19 +1,198 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 87px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
 .planet-image {
     color: white;
+    height: 290px;
+    width: 290px;
 }
 
 .planet-name {
     color: white;
+    margin-bottom: 23px;
+    font-size: 80px;
 }
 
 .planet-content {
     color: white;
-}
-
-.source {
-    color: white;
+    font-size: 19px;
+    line-height: 25px;
+    margin-bottom: 24px;
+    max-width: 350px;
+    max-height: 150px;
 }
 
 .button-group {
     color: white;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+}
+
+.single-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    border:  1px #838391 solid;
+    margin-bottom: 16px;
+    height: 48px;
+    width: 350px;
+    letter-spacing: 2.56px;
+}
+
+.button-number {
+    opacity: 75%;
+    margin: 0 28px;
+}
+
+.source {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 19px;
+    color: white;
+    opacity: 75%;
+    margin-bottom: 40px;
+}
+
+.source-image {
+    margin-left: 8px;
+    width: 12px;
+    height: 12px;
+}
+
+a:link, a:visited {
+    color: white;
+    opacity: 75%; 
+    padding-left: 5px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/*tablet styles*/
+@media (min-width: 481px) and (max-width: 800px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image-container {
+        margin: 130px 0;
+    }
+
+    .planet-image {
+        color: white;
+        height: 184px;
+        width: 184px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .planet-name {
+        color: white;
+        font-size: 48px;
+    }
+
+    .planet-content {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .single-button { 
+        height: 40px;
+        width: 281px;
+        font-size: 10px;
+    }
+
+    .button-number {
+        margin: 0px 14px 0px 20px;
+    }
+
+    .source {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+}
+
+/* mobile styles*/
+@media (max-width: 480px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin: 95px 0;
+    }
+
+    .planet-image {
+        color: white;
+        height: 111px;
+        width: 111px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .planet-name {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .planet-content {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 32px;
+        line-height: 22px;
+    }
+
+    .source {
+        font-size: 14px;
+        margin-bottom: 28px;
+        justify-content: center;
+    }
+    
+    .button-group {
+        display: none;
+    }
+
+
+   
 }

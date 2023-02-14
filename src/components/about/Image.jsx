@@ -1,9 +1,10 @@
 import React from "react";
 import '../../styles/about.css';
+import planetImage from '../../assets/planet-mercury.svg';
 
 const Image = () => {
     return (
-        <div className="planet-image">Image Here</div>
+        <img className="planet-image" src={planetImage} alt="mercury" />
     )
 }
 
