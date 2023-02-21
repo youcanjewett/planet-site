@@ -6,7 +6,7 @@ import Buttons from "./Buttons";
 import '../../styles/about.css';
 
 
-const About = () => {
+const About = (props) => {
     return (
         <div className="about-container">
             <div className="image-container">
@@ -15,10 +15,12 @@ const About = () => {
 
             <div className='content-container'>
                 <div>
-                <PlanetName />
-                <Content />
+                <PlanetName name={props.name}/>
+                <Content 
+                    planetContent={props.planetContent}
+                    sourceLink={props.sourceLink}/>
                 </div>
-                <Buttons />
+                <Buttons buttonColor={props.buttonColor}/>
 
             </div>
         </div>

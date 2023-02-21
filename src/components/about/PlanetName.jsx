@@ -1,9 +1,9 @@
 import React from "react";
 import '../../styles/about.css';
 
-const PlanetName = () => {
+const PlanetName = (props) => {
     return (
-        <h1 className="planet-name">Mercury</h1>
+        <h1 className="planet-name">{props.name}</h1>
     )
 }
 
