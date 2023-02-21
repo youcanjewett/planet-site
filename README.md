@@ -3,6 +3,8 @@
 This is a solution to the [Planet Facts Site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
+##This project is currently in progress
+
 ### The challenge
 
 Users should be able to:
