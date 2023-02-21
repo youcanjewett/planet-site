@@ -4,7 +4,7 @@ This is a solution to the [Planet Facts Site challenge on Frontend Mentor](https
 
 
 
-###This project is currently in progress
+## This project is currently in progress
 
 
 
