@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import PlanetData from "../components/planetData/PlanetData";
 
 import Home from '../pages/Home';
+import Venus from '../pages/Venus';
 import "../App.css";
 // need react router
 
@@ -25,6 +26,7 @@ return (
     <BrowserRouter>
         <Routes>
             <Route path="/" element= {<Home />} />
+            <Route path="/venus" element={<Venus />} />
         </Routes>
     </BrowserRouter>
 )

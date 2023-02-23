@@ -1,33 +1,16 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import "../../styles/about.css";
-
-// const changeColor = (e) => {
-//   var element = document.getElementById("overview");
-//   var color = e.currentTarget.getAttribute("active-color-value");
-//   element.style.backgroundColor = color;
-// };
 
 
 const Buttons = (props) => {
-  const [activeButtonId, setActiveButtonId] = useState("overview");
-  const [previousActiveButton, setPrevious] = useState(null);
-
-  useEffect(() => {
-    //need to remove active color if a different button is selected
-    // grab all button ids to transparent?
-
-    var element = document.getElementById(activeButtonId);
-    var color = element.getAttribute("active-color-value");
-    element.style.backgroundColor = color;
-  });
-
+  
   return (
     <div className="button-group">
       <button
         id="overview"
         className="single-button"
         active-color-value={props.buttonColor}
-        onClick={() => setActiveButtonId("overview")}
+        onClick={() => {props.setActiveButtonId("overview")}}
       >
         <h3 className="button-number">01</h3>
         <h3 className="button-label">Overview</h3>
@@ -36,7 +19,7 @@ const Buttons = (props) => {
       <div
         id="structure"
         className="single-button"
-        onClick={() => setActiveButtonId("structure")}
+        onClick={() => {props.setActiveButtonId("structure")}}
         active-color-value={props.buttonColor}
       >
         <h3 className="button-number">02</h3>
@@ -46,7 +29,7 @@ const Buttons = (props) => {
       <div
         id="geology"
         className="single-button"
-        onClick={() => setActiveButtonId("geology")}
+        onClick={() => {props.setActiveButtonId("geology")}}
         active-color-value={props.buttonColor}
       >
         <h3 className="button-number">03</h3>

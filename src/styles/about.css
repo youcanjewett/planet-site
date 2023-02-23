@@ -16,13 +16,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%
 }
 
+.planet-container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 .planet-image {
+    position: relative;
+    top: 0;
+    left: 0;
     color: white;
     height: 290px;
     width: 290px;
+}
+
+.geology-image-hidden {
+    display: none;
+}
+.geology-image-dislay {
+    display: block;
+    position: absolute;
+    width: 163px;
+    height: 199px;
+    bottom: 10px;
 }
 
 .planet-name {
