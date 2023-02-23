@@ -14,8 +14,8 @@ const Venus = () => {
       <div className="main-container">
         <About 
           name={data.name} 
-          planetContent={data.overview.content}
-          sourceLink={data.overview.source}
+          planetContent={data}
+          sourceLink={data}
           buttonColor={data.buttonColor}
           images={data.images}/>
         <PlanetData 

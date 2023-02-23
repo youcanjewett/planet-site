@@ -3,10 +3,10 @@ import Header from "../../components/header/Header";
 import About from "../../components/about/About";
 import MobileButtonMenu from "../../components/header/MobileButtonMenu";
 import PlanetData from "../../components/planetData/PlanetData";
-import data from './mercuryData.json';
+import data from './uranusData.json';
 import '../../App.css';
 
-const Home = () => {
+const Uranus = () => {
       return (
     <>
       <Header />
@@ -31,4 +31,4 @@ const Home = () => {
     
 }
 
-export default Home;
+export default Uranus;

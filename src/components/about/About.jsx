@@ -46,7 +46,7 @@ const About = (props) => {
             sourceLink={props.sourceLink}
           />
         </div>
-        <Buttons
+        <Buttons 
           activeButtonId={activeButtonId}
           setActiveButtonId={setActiveButtonId}
           buttonColor={props.buttonColor}
