@@ -21,7 +21,7 @@ Users should be able to:
 
 - Javascript
 - React
-- React Router
+- React Context
 - Semantic HTML5 markup
 - CSS
 - Flexbox
