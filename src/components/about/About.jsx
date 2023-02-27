@@ -20,7 +20,7 @@ const About = (props) => {
 
   return (
     <div className="about-container">
-      <div className="image-container">
+      {/* <div className="image-container">
         <Image
           activeButtonId={activeButtonId}
           name={props.name}
@@ -35,9 +35,9 @@ const About = (props) => {
           src={`geology-${props.name}.png`}
           alt="surface geology"
         />
-      </div>
+      </div> */}
 
-      <div className="content-container">
+      {/* <div className="content-container">
         <div>
           <PlanetName name={props.name} />
           <Content
@@ -50,8 +50,8 @@ const About = (props) => {
           activeButtonId={activeButtonId}
           setActiveButtonId={setActiveButtonId}
           buttonColor={props.buttonColor}
-        />
-      </div>
+        /> */}
+      {/* </div> */}
     </div>
   );
 };

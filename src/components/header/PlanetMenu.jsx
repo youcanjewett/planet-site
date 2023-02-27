@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../../styles/header.css';
 
-class PlanetMenu extends React.Component {
+const PlanetMenu =() =>  {
 
-    render() {
+
+    
         return (
             <div className = "menu-container">
                 <Link to="/" className = 'menu-planet'>Mercury</Link>
@@ -23,7 +24,7 @@ class PlanetMenu extends React.Component {
                 </div>
             </div>
         )
-    }
-}
+    
+};
 
 export default PlanetMenu;

@@ -1,8 +1,11 @@
 
-import React from "react";
+import React, {useContext} from "react";
+import { activeButtonContext } from "../../navigation/index";
 import "../../styles/about.css";
 
-const Image = (props) => {
+const Image = ({name, images}) => {
+
+  const {activeButtonId} = useContext(activeButtonContext);
   
     const setImage = (buttonId, images) => {
         let source;
@@ -25,8 +28,8 @@ const Image = (props) => {
   return (
       <img
         className="planet-image"
-        src={setImage(`${props.activeButtonId}`, props.images)}
-        alt={props.name}
+        src={setImage(activeButtonId, images)}
+        alt={name}
       />
       
     

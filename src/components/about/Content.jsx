@@ -1,20 +1,23 @@
-import React from "react";
+import React, {useContext} from "react";
+import { activeButtonContext } from "../../navigation/index";
 import "../../styles/about.css";
 import srcImage from "../../assets/icon-source.svg"
 
-const Content = (props) => {
+const Content = ({planet}) => {
 
-  const setContent = (buttonId, planetContent) => {
+  const {activeButtonId} = useContext(activeButtonContext);
+
+  const setContent = (buttonId, planetData) => {
     let content;
     switch (buttonId) {
         case "overview":
-          content= planetContent.overview.content;
+          content= planetData.overview.content;
           break;
         case "structure":
-          content = planetContent.structure.content;
+          content = planetData.structure.content;
           break;
         case "geology":
-          content = planetContent.geology.content;
+          content = planetData.geology.content;
           break;
         default:
             return null;
@@ -22,17 +25,17 @@ const Content = (props) => {
     return content;
 };
 
-const setSourceLink = (buttonId, planetContent) => {
+const setSourceLink = (buttonId, planetData) => {
   let link;
   switch (buttonId) {
       case "overview":
-        link= planetContent.overview.source;
+        link= planetData.overview.source;
         break;
       case "structure":
-        link = planetContent.structure.source;
+        link = planetData.structure.source;
         break;
       case "geology":
-        link = planetContent.geology.source;
+        link = planetData.geology.source;
         break;
       default:
           return null;
@@ -43,11 +46,11 @@ const setSourceLink = (buttonId, planetContent) => {
   return (
     <>
       <div className="planet-content">
-      {setContent(`${props.activeButtonId}`, props.planetContent)}
+      {setContent(activeButtonId, planet)}
       </div>
       <div className="source">
         <div>Source : </div>
-        <a href={setSourceLink(`${props.activeButtonId}`, props.planetContent)}>Wikipedia</a>
+        <a href={setSourceLink(activeButtonId, planet)}>Wikipedia</a>
         <img className="source-image" src={srcImage} alt='source link'/>
       </div>
     </>
