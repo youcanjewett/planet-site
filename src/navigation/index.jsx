@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../components/header/Header";
-import MobileButtonMenu from "../components/header/MobileButtonMenu";
 import Home from "../pages/Home";
 import Venus from "../pages/Venus";
 import Earth from "../pages/Earth";
@@ -31,7 +30,7 @@ const Navigation = () => {
        value={value}
       >
         <Header />
-        <MobileButtonMenu />
+        
         <Routes>
           <Route path="/" element={<Home planet={data[0]} /> }/>
           <Route path="/venus" element={<Venus />} />

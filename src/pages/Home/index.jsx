@@ -1,5 +1,7 @@
 import React, {useContext} from "react";
 import PlanetData from "../../components/planetData/PlanetData";
+import MobileButtonMenu from "../../components/header/MobileButtonMenu";
+
 import { activeButtonContext } from "../../navigation/index";
 import "../../App.css";
 import "../../styles/about.css";
@@ -16,6 +18,7 @@ const Home = ({ planet }) => {
 
   return (
     <>
+  <MobileButtonMenu/>
       <div className="main-container">
         <div className="about-container">
           <div className="image-container">
@@ -41,7 +44,7 @@ const Home = ({ planet }) => {
               </div>
 
             <div className="button-group">
-              <Buttons planetColor={mercuryColor}/>
+              <Buttons className={"button-group"} planetColor={mercuryColor}/>
             </div>
 
           </div>

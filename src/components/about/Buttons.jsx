@@ -7,17 +7,18 @@ const Buttons = ({planetColor}) => {
   const {activeButtonId, setActiveButtonId} = useContext(activeButtonContext);
  
   useEffect(() => {
-    var allButtons = document.getElementsByClassName("single-button");
+   var allButtons = document.getElementsByClassName("single-button");
     for (let button of allButtons) {
       button.style.backgroundColor = "transparent";
     }
     var element = document.getElementById(activeButtonId);
+    console.log(element);
     var color = element.getAttribute("active-color-value");
     element.style.backgroundColor = color;
-  });
+}, [activeButtonId]);
 
   return (
-    <div className="button-group">
+    <div >
       <button
         id="overview"
         className="single-button"
@@ -31,8 +32,8 @@ const Buttons = ({planetColor}) => {
       <div
         id="structure"
         className="single-button"
-        onClick={() => {setActiveButtonId("structure")}}
         active-color-value={planetColor}
+        onClick={() => {setActiveButtonId("structure")}}
       >
         <h3 className="button-number">02</h3>
         <h3 className="button-label">Internal Structure</h3>
