@@ -18,6 +18,7 @@
     justify-content: center;
 
     position: relative;
+    margin-right: 25px;
     top: 0;
     left: 0;
     width: 100%
@@ -36,6 +37,7 @@
     color: white;
     height: 290px;
     width: 290px;
+    
 }
 
 .geology-image-hidden {
@@ -75,7 +77,7 @@
     flex-direction: row;
     align-items: center;
     color: white;
-    background-color: transparent;
+    /* background-color: transparent; */
     border:  1px #838391 solid;
     margin-bottom: 16px;
     height: 48px;
@@ -140,6 +142,14 @@ a:visited {
         align-items: center;
     }
 
+    .title {
+        margin: 0;
+    }
+
+    .tablet-content {
+        flex-direction: column;
+    }
+
     .image-container {
         margin: 130px 0;
     }
@@ -202,6 +212,8 @@ a:visited {
         flex-direction: column;
         align-items: center;
     }
+
+   
 
     .image-container {
         margin: 95px 0;

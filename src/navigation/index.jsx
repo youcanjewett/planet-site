@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import Header from "../components/header/Header";
 import MobileButtonMenu from "../components/header/MobileButtonMenu";
-
 import Home from "../pages/Home";
 import Venus from "../pages/Venus";
 import Earth from "../pages/Earth";
@@ -15,18 +13,22 @@ import Neptune from "../pages/Neptune";
 import data from "../data.json";
 import "../App.css";
 
-//rename!!
-export const activeButtonContext = React.createContext();
+
+export const activeButtonContext = React.createContext({
+  activeButtonId: "overview",
+  setActiveButtonId: () => {}
+});
 
 const Navigation = () => {
   const [activeButtonId, setActiveButtonId] = useState("overview");
+  const value = {activeButtonId, setActiveButtonId};
+
+  
+
   return (
     <BrowserRouter>
       <activeButtonContext.Provider
-        value={{
-          activeButtonId,
-          setActiveButtonId
-        }}
+       value={value}
       >
         <Header />
         <MobileButtonMenu />

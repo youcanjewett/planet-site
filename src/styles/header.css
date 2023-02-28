@@ -37,18 +37,9 @@
 }
 
 
-.header-toggle span{
+.header-toggle {
     display: none;
-    overflow: hidden;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: #cdcdcd;
-    
-    z-index: 1;
-        
+  
 }
 
 .title {
@@ -82,8 +73,17 @@
       .menu-planet {
          display: none;
       }  
-      .header-toggle span{
-        display: block;
+
+      .menu-icon {
+        display: flex;
+      }
+      
+      .header-toggle {
+        border: none;
+        background: none;
+        display: flex;
+        align-items: center;
+        
       }
 
       .header-container {

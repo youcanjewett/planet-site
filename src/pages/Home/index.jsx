@@ -9,7 +9,6 @@ import Image from "../../components/about/Image";
 import Buttons from "../../components/about/Buttons";
 
 
-
 const Home = ({ planet }) => {
 
   const {activeButtonId} = useContext(activeButtonContext);
@@ -35,8 +34,12 @@ const Home = ({ planet }) => {
             />
           </div>
           <div className="content-container">
-            <PlanetName name={planet.name}/>
-            <Content planet={planet} />
+              <div className="tablet-content">
+                <PlanetName name={planet.name}/>
+                <Content planet={planet} />
+
+              </div>
+
             <div className="button-group">
               <Buttons planetColor={mercuryColor}/>
             </div>

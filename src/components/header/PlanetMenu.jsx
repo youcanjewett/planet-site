@@ -17,10 +17,10 @@ const PlanetMenu =() =>  {
                 <Link to="/uranus" className = 'menu-planet'>Uranus</Link>
                 <Link to="/neptune" className = 'menu-planet'>Neptune</Link>
 
-                <div className="header-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div className="menu-icon">
+                    <button className="header-toggle">
+                        <img src="icon-hamburger.svg" alt="hamburger icon"/>
+                    </button>
                 </div>
             </div>
         )

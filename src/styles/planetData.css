@@ -6,13 +6,13 @@
 
 .data-node-container {
     display: flex;
-    flex-direction: column;
-    padding: 20px 23px;
-    justify-content: left;
-    min-height:128px;
-    min-width: 255px;
-
-    border:  1px #838391 solid;
+flex-direction: column;
+padding: 20px 23px;
+justify-content: left;
+height: 128px;
+width: 255px;
+border: 1px #838391 solid;
+overflow: auto;
     
 }
 
@@ -38,8 +38,8 @@
         flex-direction: column;
         padding: 15px;
         justify-content: left;
-        min-height:88px;
-        min-width: 164px;
+        height:88px;
+        width: 164px;
         
     }
 
@@ -63,8 +63,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        min-height:48px;
-        min-width: 327px;
+        height:48px;
+        width: 327px;
         padding: 13px 24px;
         
     }
