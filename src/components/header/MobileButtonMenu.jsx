@@ -13,8 +13,6 @@ const MobileButtonMenu = ({planetColor}) => {
     }
     var element = document.getElementById(`${activeButtonId}-mobile`);
     var color = element.getAttribute("active-color-value");
-    console.log(element);
-    console.log(color);
     element.style.borderBottomColor = color;
   }, [activeButtonId]);
 

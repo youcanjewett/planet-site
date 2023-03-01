@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "../components/header/Header";
+import Navbar from "../components/header/Navbar";
 import Home from "../pages/Home";
 import Venus from "../pages/Venus";
 import Earth from "../pages/Earth";
@@ -29,17 +29,17 @@ const Navigation = () => {
       <activeButtonContext.Provider
        value={value}
       >
-        <Header />
+        <Navbar />
         
         <Routes>
           <Route path="/" element={<Home planet={data[0]} /> }/>
-          <Route path="/venus" element={<Venus />} />
-          <Route path="/earth" element={<Earth />} />
-          <Route path="/mars" element={<Mars />} />
-          <Route path="/jupiter" element={<Jupiter />} />
-          <Route path="/saturn" element={<Saturn />} />
-          <Route path="/uranus" element={<Uranus />} />
-          <Route path="/neptune" element={<Neptune />} />
+          <Route path="/venus" element={<Venus planet={data[1]}/>} />
+          <Route path="/earth" element={<Earth planet={data[2]}/>} />
+          <Route path="/mars" element={<Mars planet={data[3]}/>} />
+          <Route path="/jupiter" element={<Jupiter planet={data[4]}/>} />
+          <Route path="/saturn" element={<Saturn planet={data[5]}/>} />
+          <Route path="/uranus" element={<Uranus planet={data[6]}/>} />
+          <Route path="/neptune" element={<Neptune planet={data[7]}/>} />
         </Routes>
       </activeButtonContext.Provider>
     </BrowserRouter>
