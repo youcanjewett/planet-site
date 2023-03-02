@@ -12,7 +12,6 @@ const Buttons = ({planetColor}) => {
       button.style.backgroundColor = "transparent";
     }
     var element = document.getElementById(activeButtonId);
-    console.log(element);
     var color = element.getAttribute("active-color-value");
     element.style.backgroundColor = color;
 }, [activeButtonId]);

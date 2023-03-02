@@ -32,7 +32,7 @@ const Home = ({ planet }) => {
                   ? "geology-image-dislay"
                   : "geology-image-hidden"
               }
-              src={`geology-${planet.name}.png`}
+              src={"geology-mercury.png"}
               alt="surface geology"
             />
           </div>
