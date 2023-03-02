@@ -4,10 +4,6 @@ This is a solution to the [Planet Facts Site challenge on Frontend Mentor](https
 
 
 
-## This project is currently in progress
-
-
-
 ### The challenge
 
 Users should be able to:
@@ -19,11 +15,11 @@ Users should be able to:
 
 ### Built with
 
-- Javascript
+- Javascript, JSX
 - React
 - React Context
 - React Router
-- Semantic HTML5 markup
+- Semantic HTML5 
 - CSS
 - Flexbox
 
